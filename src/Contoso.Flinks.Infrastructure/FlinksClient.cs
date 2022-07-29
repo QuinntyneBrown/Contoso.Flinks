@@ -3,7 +3,7 @@ using Contoso.Flinks.Core.Interfaces;
 
 namespace Contoso.Flinks.Infrastructure
 {
-    internal class FlinksClient : IFlinksClient
+    internal class FlinksClient : IFlinksService
     {
         private readonly HttpClient _client;
 

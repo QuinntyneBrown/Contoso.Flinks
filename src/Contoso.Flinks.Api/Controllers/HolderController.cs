@@ -1,4 +1,5 @@
-using Contoso.Flinks.Core;
+using Contoso.Flinks.Core.Dtos;
+using Contoso.Flinks.Core.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -11,30 +12,32 @@ namespace Contoso.Flinks.Api.Controllers
     {
         private readonly IMediator _mediator;
         private readonly ILogger<HolderController> _logger;
+        private readonly IFlinksService _flinksService;
 
-        public HolderController(IMediator mediator, ILogger<HolderController> logger)
+        public HolderController(IMediator mediator, IFlinksService flinksService, ILogger<HolderController> logger)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _flinksService = flinksService ?? throw new ArgumentNullException(nameof(flinksService));
         }
 
-        
+
         [SwaggerOperation(
-            Summary = "Create Holder.",
-            Description = @"Create Holder."
+            Summary = "Authorize",
+            Description = @"Authorize"
         )]
-        [HttpPost(Name = "createHolder")]
+        [HttpPost(Name = "authorize")]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [ProducesResponseType(typeof(ProblemDetails), (int)HttpStatusCode.BadRequest)]
-        [ProducesResponseType(typeof(AuthorizeResponse), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<AuthorizeResponse>> Create([FromBody]AuthorizeRequest request, CancellationToken cancellationToken)
+        [ProducesResponseType(typeof(AuthorizeResponseDto), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<AuthorizeResponseDto>> Create([FromBody]AuthorizeRequestDto request, CancellationToken cancellationToken)
         {
             _logger.LogInformation(
-                "----- Sending command: {CommandName}: ({@Command})",
-                nameof(AuthorizeRequest),
+                "----- Handled: {CommandName}: ({@Command})",
+                nameof(AuthorizeRequestDto),
                 request);
         
-            return await _mediator.Send(request, cancellationToken);
+            return await _flinksService.Authorize(request);
         }        
     }
 }
