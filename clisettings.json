@@ -1,0 +1,79 @@
+{
+  "isRoot": true,
+  "endpointType": 0,
+  "minimal": false,
+  "prefix": null,
+  "idFormat": 0,
+  "idDotNetType": 0,
+  "isMicroserviceArchitecture": false,
+  "projects": [],
+  "rootDirectory": "C:\\projects\\Contoso.Flinks",
+  "solutionName": "Contoso.Flinks",
+  "solutionFileName": "Contoso.Flinks.sln",
+  "apiFullPath": "C:\\projects\\Contoso.Flinks\\src\\Contoso.Flinks.Api\\Contoso.Flinks.Api.csproj",
+  "rootNamespace": "Contoso.Flinks",
+  "domainNamespace": "Contoso.Flinks.Core",
+  "applicationNamespace": "Contoso.Flinks.Core",
+  "infrastructureNamespace": "Contoso.Flinks.Infrastructure",
+  "apiNamespace": "Contoso.Flinks.Api",
+  "domainDirectory": "C:\\projects\\Contoso.Flinks\\src\\Contoso.Flinks.SharedKernel",
+  "applicationDirectory": "C:\\projects\\Contoso.Flinks\\src\\Contoso.Flinks.Core",
+  "infrastructureDirectory": "C:\\projects\\Contoso.Flinks\\src\\Contoso.Flinks.Infrastructure",
+  "apiDirectory": "C:\\projects\\Contoso.Flinks\\src\\Contoso.Flinks.Api",
+  "unitTestsDirectory": "C:\\projects\\Contoso.Flinks\\tests\\Contoso.Flinks.UnitTests",
+  "testingDirectory": "C:\\projects\\Contoso.Flinks\\tests\\Contoso.Flinks.Testing",
+  "appDirectories": [],
+  "buildingBlocksCoreNamespace": "BuildingBlocks.Core",
+  "buildingBlocksEventStoreNamespace": "BuildingBlocks.EventStore",
+  "sourceFolder": "src",
+  "testFolder": "tests",
+  "dbContextName": "FlinksDb",
+  "port": 5000,
+  "sslPort": 5001,
+  "plugins": null,
+  "entities": [],
+  "resources": [
+    {
+      "properties": [
+        {
+          "accessModifier": "public",
+          "type": "Guid",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "HolderId",
+          "required": true,
+          "key": true
+        },
+        {
+          "accessModifier": "public",
+          "type": "string",
+          "accessors": [
+            {
+              "accessModifier": null,
+              "type": 0
+            },
+            {
+              "accessModifier": "private",
+              "type": 1
+            }
+          ],
+          "name": "Name",
+          "required": true,
+          "key": false
+        }
+      ],
+      "entities": [],
+      "name": "Holder",
+      "idPropertyName": "HolderId",
+      "idPropertyType": "Guid"
+    }
+  ]
+}

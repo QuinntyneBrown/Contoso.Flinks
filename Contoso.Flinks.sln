@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FB58FF7A-E22E-4845-B4BE-55F6C6594F23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Flinks.Api", "src\Contoso.Flinks.Api\Contoso.Flinks.Api.csproj", "{7C4F513D-F5B1-4A42-8F8D-929CEBB1DE51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Flinks.Core", "src\Contoso.Flinks.Core\Contoso.Flinks.Core.csproj", "{95CEB2D4-6BAC-4D45-95C0-98F2BB0DFFC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Flinks.Infrastructure", "src\Contoso.Flinks.Infrastructure\Contoso.Flinks.Infrastructure.csproj", "{AA6B9108-DC32-4638-958F-6E6A5D0E83AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6537EF78-9A66-492E-BEEB-3957771CF4FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Flinks.Testing", "tests\Contoso.Flinks.Testing\Contoso.Flinks.Testing.csproj", "{AD1B850A-FC9C-4814-864E-E100797CDCB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Flinks.UnitTests", "tests\Contoso.Flinks.UnitTests\Contoso.Flinks.UnitTests.csproj", "{04376983-3975-4248-87D8-A983C62B8F39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C4F513D-F5B1-4A42-8F8D-929CEBB1DE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4F513D-F5B1-4A42-8F8D-929CEBB1DE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4F513D-F5B1-4A42-8F8D-929CEBB1DE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4F513D-F5B1-4A42-8F8D-929CEBB1DE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CEB2D4-6BAC-4D45-95C0-98F2BB0DFFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CEB2D4-6BAC-4D45-95C0-98F2BB0DFFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CEB2D4-6BAC-4D45-95C0-98F2BB0DFFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CEB2D4-6BAC-4D45-95C0-98F2BB0DFFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA6B9108-DC32-4638-958F-6E6A5D0E83AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6B9108-DC32-4638-958F-6E6A5D0E83AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6B9108-DC32-4638-958F-6E6A5D0E83AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6B9108-DC32-4638-958F-6E6A5D0E83AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1B850A-FC9C-4814-864E-E100797CDCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1B850A-FC9C-4814-864E-E100797CDCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1B850A-FC9C-4814-864E-E100797CDCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1B850A-FC9C-4814-864E-E100797CDCB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04376983-3975-4248-87D8-A983C62B8F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04376983-3975-4248-87D8-A983C62B8F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04376983-3975-4248-87D8-A983C62B8F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04376983-3975-4248-87D8-A983C62B8F39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C4F513D-F5B1-4A42-8F8D-929CEBB1DE51} = {FB58FF7A-E22E-4845-B4BE-55F6C6594F23}
+		{95CEB2D4-6BAC-4D45-95C0-98F2BB0DFFC4} = {FB58FF7A-E22E-4845-B4BE-55F6C6594F23}
+		{AA6B9108-DC32-4638-958F-6E6A5D0E83AF} = {FB58FF7A-E22E-4845-B4BE-55F6C6594F23}
+		{AD1B850A-FC9C-4814-864E-E100797CDCB2} = {6537EF78-9A66-492E-BEEB-3957771CF4FC}
+		{04376983-3975-4248-87D8-A983C62B8F39} = {6537EF78-9A66-492E-BEEB-3957771CF4FC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B69396E4-EF66-4F7E-85BE-C9683081A954}
+	EndGlobalSection
+EndGlobal
